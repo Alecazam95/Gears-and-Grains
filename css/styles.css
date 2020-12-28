@@ -1,0 +1,39 @@
+body {
+  font-family: "Varela Round", serif;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+.jumbotron {
+  background-image: url(img/bakedBread.jpeg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: white;
+  margin-bottom: 0px;
+  margin-top: -20px;
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.site-footer {
+  background-color: white;
+  padding: 20px 0;
+}
+
+blockquote {
+  background-color: white;
+}
+
+.card {
+  border: none;
+}
