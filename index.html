@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Varela+Round&display=swap" rel="stylesheet" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/styles.css" />
     <title>Gears & Grains</title>
@@ -33,7 +35,7 @@
           <div class="col">
             <h1>Gears & Grains</h1>
           </div>
-          <div class="col">
+          <div class="col mt-3">
             <button type="button" 
             class="btn btn-dark btn-lg mb-1" 
             data-toggle="modal" 
@@ -57,19 +59,19 @@
           <div class="modal-body">
             <div class="container-fluid">
               <form>
-                <div class="row form-group">
-                  <label class="col-3 col-form-label"
+                <div class="row row-content align-items-center form-group m-n4">
+                  <label class="col-sm-3 col-form-label"
                     >Signature Pizza</label
                   >
                   <div
-                    class="col btn-group btn-group-toggle"
+                    class="col-sm-3 col-sm btn-group btn-group-toggle"
                     data-toggle="buttons"
                   >
                     <div
                       class="btn-group btn-group-toggle"
                       data-toggle="buttons"
                     >
-                      <label class="btn btn-light">
+                      <label class="btn btn-sm btn-light">
                         <input
                           type="radio"
                           name="size"
@@ -79,7 +81,7 @@
                         />
                         Medium
                       </label>
-                      <label class="btn btn-light">
+                      <label class="btn btn-sm btn-light">
                         <input
                           type="radio"
                           name="size"
@@ -90,7 +92,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-2">
+                  <div class="col-sm-2">
                     <select
                       name="typePizzaOne"
                       id="typePizzaOne"
@@ -101,9 +103,11 @@
                       <option value="Pepperoni Pizza">Pepperoni Pizza</option>
                       <option value="Meat Lovers">Meat Lovers</option>
                       <option value="Vegetarian">Vegetarian</option>
+                      <option value="Hawaiian">Hawaiian</option>
+                      <option value="Barbeque Chicken">Barbeque Chicken</option>
                     </select>
                   </div>
-                  <div class="col-2">
+                  <div class="col-sm-2">
                     <select
                       name="itemPizzaOne"
                       id="itemPizzaOne"
@@ -117,21 +121,30 @@
                       <option value="5">5</option>
                     </select>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="itemPizzaOne">
-                    <label class="form-check-label" for="inlineCheckbox3">add to order</label>
+                  <div class="col-sm-2">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="itemPizzaOne">
+                      <label class="form-check-label" for="inlineCheckbox3">add to order</label>
+                    </div>
                   </div>
                 </div>
-                <div class="row form-group">
-                  <label class="col-4 col-form-label"
+                <div class="row row-content align-items-center form-group m-n4">
+                  <label class="col-6 col-form-label"
                     >Loaf of Sourdough Bread</label
                   >
-                  <div
-                    class="col-2 btn-group btn-group-toggle"
-                    data-toggle="buttons"
-                  >
+                  <div class="col-sm-2">
+                    <select
+                      name="typeloafOne"
+                      id="typeLoafOne"
+                      class="form-control"
+                    >
+                      <option value="Select...">Select</option>
+                      <option value="Sourdough Loaf">Sourdough Loaf</option>
+                      <option value="Breakfast Bagel">Breakfast Bagel</option>
+                      <option value="English Muffin">English Muffin</option>
+                    </select>
                   </div>
-                  <div class="col-2">
+                  <div class="col-sm-2">
                     <select
                       name="numloafOne"
                       id="numLoafOne"
@@ -143,17 +156,18 @@
                       <option value="3">3</option>
                       <option value="4">4</option>
                       <option value="5">5</option>
-                      <option value="6">6</option>
                     </select>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="numLoafOne">
-                    <label class="form-check-label" for="inlineCheckbox4">add to order</label>
-                  </div>
+                  <div class="col">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="numLoafOne">
+                      <label class="form-check-label" for="inlineCheckbox4">add to order</label>
+                    </div>
                 </div>
+              </div>
 
-                <div class="row form-group">
-                  <label class="col-3 col-form-label"
+                <div class="row row-content align-items-center form-group m-n4">
+                  <label class="col-sm-4 col-form-label"
                     >Beverage</label
                   >
                   <div
@@ -161,7 +175,7 @@
                     data-toggle="buttons"
                   >
                   </div>
-                  <div class="col-2">
+                  <div class="col-sm-2">
                     <select
                       name="typeDrinkOne"
                       id="typeDrinkOne"
@@ -174,7 +188,7 @@
                       <option value="Water">Water</option>
                     </select>
                   </div>
-                  <div class="col-2">
+                  <div class="col-sm-2">
                     <select
                       name="itemDrinkOne"
                       id="itemDrinkOne"
@@ -188,13 +202,14 @@
                       <option value="5">5</option>
                     </select>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="itemDrinkOne">
-                    <label class="form-check-label" for="inlineCheckbox5">add to order</label>
-                  </div>
+                  <div class="col">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="itemDrinkOne">
+                      <label class="form-check-label" for="inlineCheckbox5">add to order</label>
+                    </div>
+                  </div>  
                 </div>
-
-                <div class="row form-group mt-4">
+                <div class="row form-group mt-5">
                   <div class="col">
                     <button
                       type="submit"
@@ -206,6 +221,7 @@
                       Place Order
                     </button>
                   </div>
+                  <p>Ordering for a large group? Call us at 1-800-555-5555.</p>
                 </div>
               </form>
             </div>
@@ -283,7 +299,7 @@
 
       <div class="row flex-row flex-row-reverse row-content align-items-center">
         <div class="col-sm-7 col-sm-text-right">
-          <h2>Menu</h2>
+          <h2>Our menu</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

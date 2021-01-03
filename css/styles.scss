@@ -1,14 +1,17 @@
+$body-font: "Varela Round", serif;
+$header-font: "Roboto", sans-serif;
+$title-Font: "Pacifico", cursive;
+
 body {
-  font-family: "Varela Round", serif;
+  font-family: $body-font;
 }
 
 h1 {
-  font-family: "Pacifico", cursive;
+  font-family: $title-font;
 }
-
 h2,
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: $header-font;
 }
 
 .jumbotron {

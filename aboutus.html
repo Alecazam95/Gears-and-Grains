@@ -24,52 +24,252 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Varela+Round&display=swap" rel="stylesheet" />
 
+
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>NuCamp: A Better Way To Camp</title>
+    <title>G&G: About Us</title>
   </head>
 
   <body>
 
-    <nav class="navbar navbar-collapse navbar-expand-sm navbar-light sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img src="img/logo.png" height="45" width="45"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#gearsNavbar"
-              >
-              <span class="navbar-toggler-icon"></span>
+    <nav
+      class="navbar navbar-collapse navbar-expand-sm navbar-light sticky-top border">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo.png" height="45" width="45"
+        /></a>
+        <div class="col">
+          <button
+            type="button"
+            class="btn btn-dark mb-1 float-right mr-5 d-sm-none"
+            data-toggle="modal"
+            data-target="#orderModal"
+          >
+            Order Now
+          </button>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#gearsNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="gearsNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About Us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html"> Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="locations.html"> Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="planroute.html"> Plan-Your-Route</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="btn btn-dark btn-md d-none text-nowrap float-right mr-5 d-sm-block"
+          data-toggle="modal"
+          data-target="#orderModal"
+        >
+          Order Now
+        </button>
+      </div>
+    </nav>
+
+    <div id="orderModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h3 class="modal-title">Mobile Order</h3>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
             </button>
-          <div class="collapse navbar-collapse" id="gearsNavbar">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="aboutus.html">About Us </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="menu.html"> Menu</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="locations.html"> Locations</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="planroute.html"> Plan-Your-Route</a
-                >
-              </li>
-            </ul>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="row row-content align-items-center form-group m-n4">
+                  <label class="col-sm-3 col-form-label"
+                    >Signature Pizza</label
+                  >
+                  <div
+                    class="col-sm-3 col-sm btn-group btn-group-toggle"
+                    data-toggle="buttons"
+                  >
+                    <div
+                      class="btn-group btn-group-toggle"
+                      data-toggle="buttons"
+                    >
+                      <label class="btn btn-sm btn-light">
+                        <input
+                          type="radio"
+                          name="size"
+                          id="oneLg"
+                          autocomplete="off"
+                          checked
+                        />
+                        Medium
+                      </label>
+                      <label class="btn btn-sm btn-light">
+                        <input
+                          type="radio"
+                          name="size"
+                          id="oneLg"
+                          autocomplete="off"
+                        />
+                        Large
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <select
+                      name="typePizzaOne"
+                      id="typePizzaOne"
+                      class="form-control"
+                    >
+                      <option value="Select...">Select</option>
+                      <option value="Margherita Pizza">Margherita Pizza</option>
+                      <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+                      <option value="Meat Lovers">Meat Lovers</option>
+                      <option value="Vegetarian">Vegetarian</option>
+                      <option value="Hawaiian">Hawaiian</option>
+                      <option value="Barbeque Chicken">Barbeque Chicken</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-2">
+                    <select
+                      name="itemPizzaOne"
+                      id="itemPizzaOne"
+                      class="form-control"
+                    >
+                      <option value="Select...">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="itemPizzaOne">
+                      <label class="form-check-label" for="inlineCheckbox3">add to order</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-content align-items-center form-group m-n4">
+                  <label class="col-6 col-form-label"
+                    >Loaf of Sourdough Bread</label
+                  >
+                  <div class="col-sm-2">
+                    <select
+                      name="typeloafOne"
+                      id="typeLoafOne"
+                      class="form-control"
+                    >
+                      <option value="Select...">Select</option>
+                      <option value="Sourdough Loaf">Sourdough Loaf</option>
+                      <option value="Breakfast Bagel">Breakfast Bagel</option>
+                      <option value="English Muffin">English Muffin</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-2">
+                    <select
+                      name="numloafOne"
+                      id="numLoafOne"
+                      class="form-control"
+                    >
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="numLoafOne">
+                      <label class="form-check-label" for="inlineCheckbox4">add to order</label>
+                    </div>
+                </div>
+              </div>
+
+                <div class="row row-content align-items-center form-group m-n4">
+                  <label class="col-sm-4 col-form-label"
+                    >Beverage</label
+                  >
+                  <div
+                    class="col btn-group btn-group-toggle"
+                    data-toggle="buttons"
+                  >
+                  </div>
+                  <div class="col-sm-2">
+                    <select
+                      name="typeDrinkOne"
+                      id="typeDrinkOne"
+                      class="form-control"
+                    >
+                      <option value="Select...">Select</option>
+                      <option value="Coke">Coke</option>
+                      <option value="Sprite">Sprite</option>
+                      <option value="Diet Coke">Diet Coke</option>
+                      <option value="Water">Water</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-2">
+                    <select
+                      name="itemDrinkOne"
+                      id="itemDrinkOne"
+                      class="form-control"
+                    >
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="itemDrinkOne">
+                      <label class="form-check-label" for="inlineCheckbox5">add to order</label>
+                    </div>
+                  </div>  
+                </div>
+                <div class="row form-group mt-5">
+                  <div class="col">
+                    <button
+                      type="submit"
+                      class="btn btn-secondary"
+                      data-dismiss="modal">
+                      Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      Place Order
+                    </button>
+                  </div>
+                  <p>Ordering for a large group? Call us at 1-800-555-5555.</p>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
 
       <div class="container">
         <div class="card mt-4">
             <blockquote class="blockquote text-center card-body">
-              <h2 class="mb-0">
+              <h2 class="mb-0 mt-5">
                 "It's about pushing yourself to be the best you can be in everything you do, whether that be in the kitchen or on your bike"
               </h2>
               <footer class="blockquote-footer">
@@ -85,7 +285,7 @@
             <div class="col-sm-7 col-sm-text-right">
               <h2>Who we are</h2>
               <p class="mt-5">
-                Gears & Grains is an artisan bakery that offers a hand-crafted selection of breads, sandwiches and pizzas. We offer a wide selection of local beers. The bakery was originally established in Boulder, CO in 2020 and named after our passion for cycling, bread, and beer. This passion translates to a delicious selection of beer and bread that is easily accessible via nearby bike paths.
+                Gears & Grains is an artisan bakery that offers a hand-crafted selection of breads, sandwiches and pizzas. We also offer a wide selection of beers from locally owned breweries. G&G was established in Boulder, CO in 2019 and named after our passion for cycling, bread, and beer. This passion translates to a delicious selection of beer and bread that is easily accessible via nearby bike paths. Due to the overwhelmingly positive reception we've received in Boulder, we've recently opened a second location in the wonderful town of Arvada, CO.
               </p>
             </div>
             <div class="col">
