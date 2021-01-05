@@ -1,6 +1,6 @@
 $body-font: "Varela Round", serif;
 $header-font: "Roboto", sans-serif;
-$title-Font: "Pacifico", cursive;
+$title-font: "Pacifico", cursive;
 
 body {
   font-family: $body-font;
@@ -12,13 +12,6 @@ h1 {
 h2,
 h3 {
   font-family: $header-font;
-}
-
-.jumbotron {
-  background-image: url(img/bakedBread.jpeg);
-  height: 100%;
-  width: 100%;
-  background-size: cover;
 }
 
 .navbar {
@@ -44,4 +37,9 @@ blockquote {
 
 .card {
   border: none;
+}
+
+.jumbotron {
+  
+  height: 300px;
 }
